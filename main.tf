@@ -8,7 +8,7 @@ resource "aws_instance" "one" {
   instance_type          = "c7i-flex.large"
   key_name               = "training_ncpl_tf"
   subnet_id              = "subnet-071b6fdf79d2c4741"
-  vpc_security_group_ids = ["sg-046cd16cdb7a78595"]
+  vpc_security_group_ids = ["sg-06a6104d0ac9762c2"]
 
   tags = {
     Name = var.instance_names[count.index]
